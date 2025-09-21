@@ -33,7 +33,7 @@ if not st.session_state.forgiven:
 
     with col2:
         # Replace the path with the full path to your picture
-        image_path = r"C:\Users\kokei\Downloads\her_picture.jpg"  # <-- your file here
+        image_path = "her_picture.jpg"  # <-- your file here
         img = Image.open(image_path)
         st.image(img, caption="Our son is asking as as well ❤️")
 
@@ -41,3 +41,4 @@ if not st.session_state.forgiven:
 if st.session_state.forgiven:
     fire_confetti()
     st.markdown("<h1 style='text-align:center; color:#28a745;'>Yay! I love you ❤️</h1>", unsafe_allow_html=True)
+
